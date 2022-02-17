@@ -5,6 +5,9 @@ public class Card {
 
     public final String[] SUITS = {"Spades", "Hearts", "Diamonds", "Clubs"};
     public final String DEFAULT_SUIT = "Spades";
+    public final String DEFAULT_SUIT = "Spades";
+    public final int DEFAULT_RANK = 14;
+
 
 
     private int rank; // self.__rank
@@ -20,7 +23,7 @@ public class Card {
         suit = newSuit;
     }
 
-    public Card() {
+    public Card(int newRank, int newSuit) {
         rank = DEFAULT_RANK;
         suit = DEFAULT_SUIT;
     }
